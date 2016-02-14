@@ -34,9 +34,17 @@ var ListOfVideos = React.createClass({
 
 var VideoForm = React.createClass({
   render: function() {
+    var newVideoInput = <input className="newVideo" type="text" placeholder="video" />
+    var newArtistInput = <input className="newArtist" type="text" placeholder="artist" />
+    var newVideoSubmitButton = <button className="addVideo">Add A New Video!</button>
     return (
       <div className="videoForm">
-        <h3>Sup from video form</h3>
+        <h1>Add A New Video!</h1>
+        {newVideoInput}
+        <br/><br/>
+        {newArtistInput}
+        <br/><br/>
+        {newVideoSubmitButton}
       </div>
     );
   }
